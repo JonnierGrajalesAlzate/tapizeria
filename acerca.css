@@ -1,0 +1,120 @@
+body{
+    background-color: #bdbfc2;
+}
+img{
+    height: 65px;
+    width: 90px;
+}
+ 
+.inicioa{
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    left: 300px;
+    top: 0px;
+    color: #7b736f;
+    text-decoration: none;
+}
+
+.acercaa{
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    left: 350px;
+    top: 1px;
+    color: #7b736f;
+    text-decoration: none ;
+}
+
+.materialesa{
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    left: 400px;
+    top: 1px;
+    color: #7b736f;
+    text-decoration: none;
+}
+
+.carritoi{
+height: 30px;
+width: 30px;
+margin-left: 430px;
+margin-top: 30px;
+}
+
+.botonesa{
+    margin-top: -86px;
+   margin-left: 1000px;
+}
+
+hr{
+    border-color: #7b736f;
+}
+
+.nosotros{
+font-size: 70px;
+margin-top: 50px;
+margin-left: 800px;
+color: #7b736f;
+}
+
+.textos1{
+    font-size: 30px;
+    color: #7b736f;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.pf{
+    font-size: 50px;
+    margin-left: 10px;
+    color: #7b736f;
+    margin-top: 60px;
+}
+
+.preguntas{
+    font-size: 30px;
+    color: #7b736f;
+}
+.Cajav{
+height: 300px;
+width: 455px;
+background-color: #e6dcd3;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: 300px;
+text-align: center;
+}
+
+.Cajam{
+    height: 300px;
+    width: 455px;
+    background-color: #e6dcd3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    transform: translateY(-300px);
+    text-align: center;
+    
+}
+.pvision{
+   color: #7b736f;
+}
+
+.tvision{
+    color: #7b736f;
+}
+
+.pmision{
+    color: #7b736f;
+ }
+ 
+ .tmision{
+     color: #7b736f;
+ }
+

@@ -1,0 +1,106 @@
+body{
+    background-color: #bdbfc2;
+}
+
+img{
+    height: 65px;
+    width: 90px;
+}
+
+.inicior{
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    left: 300px;
+    top: 1px;
+    color:#7b736f;
+    text-decoration: none;
+}
+
+.acercar{
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    left: 350px;
+    top: 1px;
+    color:#7b736f;
+    text-decoration: none;
+}
+
+.materialesr{
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    left: 400px;
+    top: 1px;
+    color:#7b736f;
+    text-decoration: none;
+}
+
+
+.carritoir{
+    height: 30px;
+    width: 30px;
+    margin-left: 430px;
+    margin-top: 30px;
+}
+
+.botonesr{
+    margin-top: -86px;
+   margin-left: 1000px;
+}
+
+hr{
+    border-color: #7b736f;
+}
+
+.principal{
+    margin-top: 1px;
+   width: 700px;
+   margin-left: 600px;
+}
+
+.principal h4 {
+    border: 2px dotted #e6dcd3;
+    border-radius: 5px;
+    margin: 10px 50px;
+    padding: 20px;
+    height: 30px;
+    color: #7b736f;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    
+    margin-top: 100px;
+    margin-left: -80px;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color:#7b736f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+   margin-left: 300px;
+}
+
+h1{
+ text-align: center;
+ color: #7b736f;
+}
+
+form button {
+      animation: pulse 2s infinite;
+}

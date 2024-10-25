@@ -1,0 +1,53 @@
+body{
+    background-color: #bdbfc2;
+}
+
+img{
+    height: 65px;
+    width: 90px;
+}
+
+.inicioc{
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    left: 300px;
+    top: -90px;
+    color: #7b736f;
+    text-decoration: none;
+}
+
+.acercac{
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    left: 350px;
+    top: -90px;
+    color: #7b736f;
+    text-decoration: none;
+}
+
+.materialesc{
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    left: 400px;
+    top: -90px;
+    color: #7b736f;
+    text-decoration: none;
+}
+
+.carritoic{
+  height: 30px;
+  width: 30px;
+  margin-left: 450px;
+  margin-top: 30px;
+}
+
+hr{
+    border-color: #7b736f;
+}
+
+.botonesc{
+    margin-left: 1000px;
+}
