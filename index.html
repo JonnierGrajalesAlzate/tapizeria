@@ -1,78 +1,75 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoTapiz</title>
+    <link rel="shortcut icon" href="./img/shortcut.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <title>TECNOTAPÍZ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
-
 <body>
-    <div class="container">
-        <nav>
-            <div class="logotipo"><img src="./img/logotipo.png" alt="imagen logo" ></div>
-            <div class="botones">
-                <ul class="menu">
-                    <li><a class="inicio" href="index.html">Inicio</a></li>
-                    <li><a class="acerca" href="Acerca.html">Acerca de</a></li>
-                    <li><a class="materiales" href="Materiales.html">Materiales</a></li>
-                    <li><a class="carrito" href="carrito.html"><img class="carritoimg" src="./img/icono_carrito.png" alt=""></a></li>
-                </ul>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="./img/logotipo.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li class="active"><a href="#">Inicio</a></li>
+            <li><a href="./Acerca.html">Nosotros</a></li>
+            <li><a href="./Materiales.html">Materiales</a></li>
+            <li class="carrito"><a href="./carrito.html"><img src="./img/icono_carrito.png" alt="Carrito"></a></li>
+        </ul>
+    </nav>
+    
+    <section class="contenido">
+        <div class="informacion">
+            <div class="imagen_flotando">
+                <img src="./img/imagensvg.svg" alt="ImagenSofa">
             </div>
-        </nav>
-        
-        <main>
-            <div class="informacion">
-                <h1>BIENVENIDOS</h1>
-                <h2>Tu vision nuestro arte en cada detalle</h2>
-               <p>  Bienvenido a TecnoTapiz,tu tienda emergente de decoración para el hogar.Nos especializamos en ofrecer piezas unicas y modernas para transformar tu espacio en un ambiente acogedor y elegante.Con una pasión por el diseño,nuestro objetivo es brindarte productos de calidad que reflejen tu estilo y personalidad,creando espacios que te hagan sentr en casa </p>
-            </div>
-        </main>
-        <div id="content1">
-        <div class="imagen">
-           <img class="img" src="./img/remodelacion.jpg" alt="">
-        </div>
-            <div class="caja">
-                <h2>Creación</h2>
-                <p>Diseña tu mueble desde cero a tu gusto</p>
-                <button class="btn"> 
-                    <a href="./creacion.html">Ver más</a>
-                </button>
+            <div class="informacionBasica">
+                <h1>Bienvenidos</h1>
+                <h2>Tu visión, nuestro arte en cada detalle</h2>
+                <p>Bienvenido a TecnoTapiz, tu tienda emergente de decoración para el hogar. Nos especializamos en ofrecer piezas únicas y modernas para transformar tu espacio en un ambiente acogedor y elegante. Con una pasión por el diseño, nuestro objetivo es brindarte productos de calidad que reflejen tu estilo y personalidad, creando espacios que te hagan sentir en casa.</p>
             </div>
         </div>
 
+        <div class="servicios">
+            <div class="bloque">
+                <img src="./img/remodelacion.jpg" alt="">
+                <div class="datos">
+                    <h1>Creación</h1>
+                    <p>Diseña tu mueble desde cero.</p>
+                    <a href="./creacion.html" class="boton">Ver más</a>
+                </div>
+            </div>
 
-        <div id="content2">
-            <div class="imagen">
-                <img class="img" src="./img/creacion.jpg" alt="">
-             </div>
-            <div class="caja">
-                <h2>Remodelacion</h2>
-                <p>Renueva tus muebles, reutiliza</p>
-                <button class="btn">
-                    <a href="reforma.html">Ver más</a>
-                </button>
+            <div class="bloque">
+                <img src="./img/creacion.jpg" alt="">
+                <div class="datos">
+                    <h1>Remodelación</h1>
+                    <p>Rediseña tu mueble a tu gusto.</p>
+                    <a href="./reforma.html" class="boton">Ver más</a>
+                </div>
+            </div>
+
+            <div class="bloque">
+                <img src="./img/Tela.jpg" alt="">
+                <div class="datos">
+                    <h1>Catálogo</h1>
+                    <p>Explora los productos disponibles.</p>
+                    <a href="./catalogo.html" class="boton">Ver más</a>
+                </div>
             </div>
         </div>
-        
-        <div id="content3">
-            <div class="imagen">
-                <img class="img" src="./img/Tela.jpg" alt="">
-             </div>
-             <div class="caja">
-                <h2>Catalogo</h2>
-                <p>Podras ver los productos disponibles</p>
-                <button class="btn">
-                  <a  href="catalogo.html">Ver más</a>
-              </button>
-              </div>
+    </section>
 
-        </div>
-        <footer>
-            <p>TecnoTapíz</p>
-            <p>By:2024</p>
-        </footer>
-      </div>
+    <footer>
+        <h1>TecnoTapíz</h1>
+    </footer>
 </body>
 </html>
