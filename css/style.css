@@ -134,7 +134,7 @@ nav ul li.carrito {
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 8px 8px 2px 1px rgba(47, 47, 47, 0.2);
     width: 280px;
     text-align: center;
     display: flex;
@@ -223,7 +223,7 @@ footer h1 {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #2c3e50;
+        background: #000000;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -243,6 +243,7 @@ footer h1 {
     }
     #check:checked ~ ul {
         left: 0;
+        background-color: #46494c;
     }
 
     .imagen_flotando{
