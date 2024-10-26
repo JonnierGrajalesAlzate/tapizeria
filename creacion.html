@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website with a contact Form 01</title>
+    <link rel="stylesheet" href="./css/reforma.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
-    <!--creacion-->
+    <nav> 
+       <ul class="menu-horizontal">
+        <li><a href="./index.html" id="selector">Regresar</a></li>
+       </ul> 
+    </nav>
+    
+    <div class="content">
+
+        <h1 class="logo">Cre <span>ar</span></h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Contáctanos</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre Completo</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>Correo Electrónico</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Número celular</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Dirección</label>
+                        <input type="text" name="addres">
+                    </p>
+                    <p class="block">
+                       <label>Describa detalladamente como lo quiere.</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Más información</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>TecnoTapíz</li>
+                    <li><i class="fas fa-phone"></i> (+57) 314 8802822</li>
+                    <li><i class="fas fa-envelope-open-text"></i> tecnotapiz444@gmail.com</li>
+                </ul>
+                <p>Envia este formulario para iniciar tu creación de manera eficiente y segura</p>
+                <p>TecnoTapíz.com</p>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
