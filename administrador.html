@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/shortcut.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/administrador.css" />
+  <title>administrador-TecnoTapíz</title>
+</head>
+<body>
+    <nav> <ul class="menu-horizontal">
+        <li><a href="./index.html" id="selector">Regresar</a></li>
+    </ul> </nav>
+  <div class="container">
+    <div class="login">
+      <div class="login__content">
+        <img class="login__img" src="./img/imagensvg.svg" alt="Login image" />
+
+        <form class="login__form">
+          <div>
+            <h1 class="login__title">
+              <span>Bienvenido</span> Administrador
+            </h1>
+
+            <p class="login__description">
+              Inicia sesión para continuar.
+            </p>
+          </div>
+
+          <div>
+            <div class="login__inputs">
+              <div>
+                <label for="email" class="login__label">Correo electrónico</label>
+                <input class="login__input" type="email" id="email" placeholder="Ingresa tu correo electrónico" required />
+              </div>
+
+              <div>
+                <label for="password" class="login__label">Contraseña</label>
+                <div class="login__box">
+                  <input class="login__input" type="password" id="password" placeholder="Ingresa tu contraseña" required />
+                  <i class="ri-eye-off-line login__eye" id="input-icon"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="login__check">
+              <label class="login__check-label" for="check">
+                <input class="login__check-input" type="checkbox" id="check" />
+                <i class="ri-check-line login__check-icon"></i>
+                Recordar ingreso
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <div class="login__buttons">
+              <button class="login__button">Ingresar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/administrador.js"></script>
+</body>
+</html>
