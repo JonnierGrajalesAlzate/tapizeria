@@ -16,19 +16,6 @@ body{font-family: 'Poppins', sans-serif;
     background-size: cover;
 }
 
-.todo{
-    background-color:rgb(251, 251, 199);
-    border: solid 3px black;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 10%; 
-    margin-right:10%;
-    width: 80%;
-    height: 90%;
-    align-content: center;
-}
-
-
 nav{
   background: #9a9c9c;
   grid-area: nav;
@@ -52,25 +39,23 @@ nav{
 
 .menu-horizontal > li a{
     display: block;
-    padding: 15px 20px;
-    font-size: 40px;
-    color: white;
     text-decoration: none;
     float: left;
 }
 
 #selector{
-    font-size: 20px;
-    color: white;
-   font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: .5s;
 }
 
 #selector:hover{ 
-
-  background-size: cover;
-  font-size: 25px;
-  color: rgb(146, 146, 146);
-  font-family: 'Poppins', sans-serif;
+  background: black;
+  transition: .5s;
 }
 
 .container {
@@ -82,18 +67,13 @@ nav{
     "nav nav nav nav"
     "sidebar sidebar main main"
     "footer footer footer footer";
-  grid-gap: 0.2rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #004d40;
+  grid-gap: 0.2rem; 
   text-align: center;
 }
 
 
 main {
-  background-image: url('./img/Tela.jpg');
-  background: linear-gradient(0deg, rgba(237, 223, 137, 0.24), rgba(10, 186, 255, 0.24)), url(./img/Tela.jpg), #C4C4C4;
+  background: linear-gradient(0deg, rgba(237, 223, 137, 0.24), rgba(10, 186, 255, 0.24)), #C4C4C4;
   grid-area: main;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -119,22 +99,11 @@ main {
 }
 
 
-.fotos2{
-  margin-top: 30px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.fotore{
-width: 600px;
-height: 600px;
-min-width: 250px;
-min-height: 180px;
-}
-
 #sidebar {
-  background-color: rgba(220, 255, 175, 0.589);
+  background: linear-gradient(0deg, rgba(240, 239, 231, 0.24), rgba(255, 230, 131, 0.24)), url(../img/portada.avif), #C4C4C4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-area: sidebar;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -165,19 +134,11 @@ min-height: 180px;
 }
 }
 
-.fotore{
-  width: 130px;
-  height: 130px;
-}
-
-
-
-.contenedor ul li{
+.contenedor ul li{ 
   margin: 2em;
   list-style: none;
   font-size: 1.5em;
   color: black;
-  font-family: 'Poppins', sans-serif;
 }
 
 .contenedor h2{
@@ -185,40 +146,15 @@ min-height: 180px;
   font-size: 2.5em;
   margin: 20px;
 text-align: center;
-  font-family: 'Poppins', sans-serif;
  
 }
 
 .contenedor p{
-  font-family: 'Poppins', sans-serif;
   margin-top: 20px;
   font-size: 1.5em;
   margin: 2rem;
   color: black;
 }
-
-.imge{
-  height: 150px;
-  width: 150px;
-}
-
-img{
-  height: 150px;
-  width: 150px;
-}
-
-.fotos{
-  display: flex;
-  justify-content: space-between;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.imge :hover{
-  width: 200px ;
-  height: 200px;
-}
-
 
 
 footer {
@@ -262,28 +198,13 @@ footer {
   justify-content: space-around;
 }
 
-.text{
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
 
-}
-
-.cont1{
-  font-family: 'Poppins', sans-serif;
-  
-}
 
 p{
   color: rgb(190, 189, 189);
   font-family: 'Poppins', sans-serif;
 }
 
-.cont3{
-  text-align: center;
-  background-color:#26272b;
-  color: white;
-
-}
 
 
 @media only screen and (min-width: 700px) {
@@ -294,23 +215,7 @@ p{
     height: 100px;
   }
 }
- @media screen and (min-width:2100px) {
-  .imge{
-    height: 350px;
-    width: 350px;
-  }
 
-  .fotos{
-    margin-right: 4em;
-    margin-left: 4em;
-  }
-
-  .fotore{
-    height: 300px;
-    width: 300px;
-  }
-  
- }
 .email
 {
   padding-left:0;
@@ -402,7 +307,7 @@ p{
   background-image: url('../img/instagram.PNG') ;
 } 
 
-.redes a.facebook:hover
+.redes a.tiktok:hover
 {
   opacity: 0.5;
 }
@@ -411,10 +316,6 @@ p{
   opacity: 0.5;
 }
 
-.redes a.twitter:hover
-{
-  opacity: 0.5;
-}
 @media (max-width:767px)
 {
   .redes li.title
@@ -488,7 +389,7 @@ a {
     background-image: url('../img/instagram.PNG') ;
   } 
   
-  .redes a.facebook:hover
+  .redes a.tiktok:hover
   {
     opacity: 0.5;
   }
@@ -496,11 +397,7 @@ a {
   {
     opacity: 0.5;
   }
-  
-  .redes a.twitter:hover
-  {
-    opacity: 0.5;
-  }
+
   @media (max-width:767px)
   {
     .redes li.title
@@ -511,17 +408,3 @@ a {
     }
   }
 
-  @media screen and (max-width:600px) {
-
-    .fotos{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    .imge{
-      margin-bottom: 20px;
-    }
-    
-  }

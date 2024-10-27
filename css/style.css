@@ -83,7 +83,10 @@ nav ul li.carrito {
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background-color: white;
+    background-image: url(../img/portada.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
 }
 
