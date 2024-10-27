@@ -44,8 +44,9 @@ nav{
 }
 
 #selector{
+  margin-left: 15px;
   text-decoration: none;
-  color: #fff;
+  color: black;
   font-size: 18px;
   padding: 7px 13px;
   border-radius: 3px;
@@ -54,8 +55,8 @@ nav{
 }
 
 #selector:hover{ 
-  background: black;
-  transition: .5s;
+      background: #434343;
+      color:wheat;
 }
 
 .container {

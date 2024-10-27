@@ -5,6 +5,13 @@
     font-family: 'Open Sans';
 }
 
+body{
+    background: linear-gradient(0deg, rgba(83, 124, 78, 0.24), rgba(149, 131, 42, 0.24)), #C4C4C4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 nav{
     background: #9a9c9c;
     grid-area: nav;
@@ -35,7 +42,7 @@ nav{
   #selector{
     margin-left: 15px;
     text-decoration: none;
-    color: #fff;
+    color: black;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -44,39 +51,15 @@ nav{
   }
   
   #selector:hover{ 
-    background: black;
-    transition: .5s;
+        background: #434343;
+        color:wheat;
   }
-
-
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-}
-
-
-.menu li {
-    list-style: none;
-}
-
-.menu li a {
-    background-color: rgb(255, 170, 0);
-    padding: 12px 6px;
-    border-radius: 50px;
-    color: black;
-    text-decoration: none;
-}
-
 .contenedor{
     max-width: 1200px;
     padding: 10px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    /* oculto lo que queda fuera del .contenedor */
     contain: paint;
     animation: animacion 1.5s ease;
 }
@@ -93,14 +76,14 @@ nav{
       transform: translateX(0);
   }
   }
-/* SECCION CONTENEDOR DE ITEMS */
+
 .contenedor .contenedor-items{
+    
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap:30px;
     grid-row-gap: 30px;
-    /* width: 60%; */
     width: 100%;
     transition: .3s;
 }
@@ -136,13 +119,12 @@ nav{
     display: block;
     margin: 10px auto;
     border: none;
-    background-color: black;
-    color: #fff;
+    background-color: #9a9c9c;
+    color: black;
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
 }
-/* seccion carrito */
 .carrito{
     border: 1px solid #666;
     width: 35%;
@@ -153,20 +135,18 @@ nav{
     position: sticky !important;
     top: 0;
     transition: .3s;
-    /* Estilos para ocultar */
     margin-right: -100%;
     opacity: 0;
 }
 .carrito .header-carrito{
-    background-color: #000;
-    color: #fff;
+    background-color: #9a9c9c;
+    color: black;
     text-align: center;
     padding: 30px 0;
 }
 .carrito .carrito-item{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     position: relative;
     border-bottom: 1px solid #666;
     padding: 20px;
@@ -246,8 +226,8 @@ nav{
     display: block;
     width: 100%;
     border: none;
-    background: #000;
-    color: #fff;
+    background: #9a9c9c;
+    color: black;
     border-radius: 5px;
     font-size: 18px;
     padding: 20px;
@@ -261,7 +241,6 @@ nav{
     scale: 1.05;
 }
 
-/* SECCION RESPONSIVE */
 @media screen and (max-width: 850px) {
     .contenedor {
       display: block;

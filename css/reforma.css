@@ -3,15 +3,17 @@
 }
 
 body {
-    background: #9a9c9c;
+    background: linear-gradient(0deg, rgba(83, 124, 78, 0.24), rgba(149, 131, 42, 0.24)), #C4C4C4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
     padding: 0 1.5em;
 }
 
-nav{
-    background: #9a9c9c;
+nav{ 
     grid-area: nav;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -21,8 +23,7 @@ nav{
   }
   
   
-  .menu-horizontal{
-    background: #9a9c9c;
+  .menu-horizontal{ 
       display:flex;
       align-items: center;
     height: 60px;
@@ -38,8 +39,9 @@ nav{
   }
   
   #selector{
+    margin-left: 15px;
     text-decoration: none;
-    color: #fff;
+    color: black;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -48,8 +50,8 @@ nav{
   }
   
   #selector:hover{ 
-    background: black;
-    transition: .5s;
+        background: #434343;
+        color:wheat;
   }
 
 .container {
@@ -71,7 +73,7 @@ ul {
 }
 
 .logo span {
-    color: white;
+    color: rgb(106, 103, 103);
 }
 
 .contact-wrapper {
