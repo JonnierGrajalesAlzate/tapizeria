@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/shortcut.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/carrito.css">
+    <title>TecnoTapíz-Inventario</title>
+</head>
+<body>
+    <nav> <ul class="menu-horizontal">
+          <li><a href="./index.html" id="selector">Regresar</a></li>
+      </ul> </nav>
+
+      
+        <h1>Productos</h1>
+    <div id="productos"></div>
+ 
+    
+
+    <script>
+        fetch('http://localhost:3001/productos')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error al cargar los productos.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const contenedor = document.getElementById('productos');
+                data.forEach(producto => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <h3>${producto.titulo}</h3>
+                        <img src="${producto.imagen}" alt="${producto.titulo}" />
+                        <p>Precio: $${producto.precio}</p>
+                        <button>Comprar</button>
+                    `;
+                    contenedor.appendChild(card);
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('productos').innerHTML = '<p>Error al cargar los productos.</p>';
+            });
+    </script>
+</body>
+</html>

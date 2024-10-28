@@ -20,7 +20,7 @@ const showHiddenPassword = (inputPassword, inputIcon) => {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     if (email === 'admin444@gmail.com' && password === 'TecnoTapiz') {
-      window.location.href = 'carrito.html'; 
+      window.location.href = 'admin.html'; 
     } else {
       alert('Correo o contraseña incorrectos');
     }
