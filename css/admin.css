@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: rgb(229, 226, 226);
     margin: 0;
     padding: 20px;
 }
@@ -74,19 +74,18 @@ input[type="number"] {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    box-sizing: border-box; 
 }
 
 input[type="text"]:focus,
 input[type="number"]:focus {
-    border-color: #2980b9; /* Cambia el borde cuando está en foco */
-    outline: none; /* Elimina el borde azul de enfoque predeterminado */
+    border-color: #2980b9; 
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #2980b9;
+    background-color:#484848;  
     color: white;
     border: none;
     border-radius: 5px;
@@ -96,12 +95,12 @@ button {
 }
 
 button:hover {
-    background-color: #3498db; /* Cambia el color al pasar el ratón */
+    background-color: black
 }
 
 #mensaje {
     margin-top: 15px;
     text-align: center;
     font-weight: bold;
-    color: #e74c3c; /* Color para mensajes de error */
+    color: #e74c3c; 
 }

@@ -4,46 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/shortcut.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/carrito.css">
-    <title>TecnoTapíz-Inventario</title>
+    <link rel="stylesheet" href="./css/productos.css">
+    <title>TecnoTapíz-Catálogo</title>
 </head>
 <body>
-    <nav> <ul class="menu-horizontal">
-          <li><a href="./index.html" id="selector">Regresar</a></li>
-      </ul> </nav>
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="./index.html" id="selector">Regresar</a></li>
+            <li class="carrito-link">
+                <a href="#" id="ver-carrito">
+                    <img src="./img/icono_carrito.png" alt="Carrito" class="icono-carrito"> 
+                    <span id="contador-carrito">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-      
-        <h1>Productos</h1>
+    <h1>Productos disponibles</h1>
     <div id="productos"></div>
  
-    
-
-    <script>
-        fetch('http://localhost:3001/productos')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Error al cargar los productos.');
-                }
-                return response.json();
-            })
-            .then(data => {
-                const contenedor = document.getElementById('productos');
-                data.forEach(producto => {
-                    const card = document.createElement('div');
-                    card.className = 'card';
-                    card.innerHTML = `
-                        <h3>${producto.titulo}</h3>
-                        <img src="${producto.imagen}" alt="${producto.titulo}" />
-                        <p>Precio: $${producto.precio}</p>
-                        <button>Comprar</button>
-                    `;
-                    contenedor.appendChild(card);
-                });
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                document.getElementById('productos').innerHTML = '<p>Error al cargar los productos.</p>';
-            });
-    </script>
+    <div id="modal-carrito" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-items"></div>
+            <p id="total-compra">Total: $0</p>
+            <button id="finalizar-compra">Continuar con el pago</button>
+        </div>
+    </div>
+     <script src="./js/productos.js"></script>
 </body>
 </html>

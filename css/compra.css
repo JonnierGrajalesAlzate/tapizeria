@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(229, 226, 226);
+    color: #333;
+    margin: 0; 
+}
+
+nav {
+    background-color: rgb(149, 149, 149);
+    padding: 20px;
+  }
+  
+  .menu-horizontal {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-horizontal a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+  }
+
+  
+  
+  #selector{
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: .5s;
+  }
+  
+  #selector:hover{ 
+        background: #434343;
+        color:wheat;
+  }
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+#resumen-carrito {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#resumen-carrito h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+#productos-carrito p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+#total-compra {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 10px;
+    text-align: right;
+}
+
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="month"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+}
+
+#mensaje-confirmacion {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}

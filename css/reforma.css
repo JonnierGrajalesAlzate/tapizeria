@@ -3,10 +3,7 @@
 }
 
 body {
-    background: linear-gradient(0deg, rgba(83, 124, 78, 0.24), rgba(149, 131, 42, 0.24)), #C4C4C4;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(229, 226, 226);
     color: #fff;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
@@ -144,8 +141,7 @@ ul {
     text-align: center;
     margin: 0 0 1rem 0;
 }
-
-/* LARGE SIZE */
+ 
 @media(min-width: 700px) {
     body {
         padding: 0 4em;
