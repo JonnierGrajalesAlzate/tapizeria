@@ -5,28 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/shortcut.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/admin.css">
-    <title>TecnoTapíz-Administrador</title>
+    <link rel="stylesheet" href="./css/productos.css">
+    <title>TecnoTapíz-Admin</title>
 </head>
 <body>
-    <nav> <ul class="menu-horizontal">
-        <li><a href="./index.html" id="selector">Regresar</a></li>
-    </ul> </nav>
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="./index.html" id="selector">Regresar</a></li> <!-- Opción para ir a productos -->
+        </ul>
+    </nav>
+    
 
-    <h1>Agregar Producto</h1>
-    <form id="productoForm">
-        <label for="titulo">Título:</label>
-        <input type="text" id="titulo" required>
-        <br>
-        <label for="imagen">URL de Imagen:</label>
-        <input type="text" id="imagen" required>
-        <br>
-        <label for="precio">Precio:</label>
-        <input type="number" id="precio" required>
-        <br>
-        <button type="submit">Agregar Producto</button>
-    </form>
+    <h1>Administrador de Productos</h1>
+    
     <div id="mensaje"></div>
 
+    <form id="productoForm">
+        <input type="text" id="titulo" placeholder="Título del producto" required>
+        <input type="text" id="imagen" placeholder="URL de la imagen" required>
+        <input type="number" id="precio" placeholder="Precio del producto" required>
+        <button type="submit">Guardar</button>
+    </form>
+    
+    <div id="ventas">
+        <p id="cantidad-productos-vendidos"></p>
+        <p id="nombres-productos-vendidos"></p>
+    </div>
+
+    <div id="productos"></div>
+
     <script src="./js/admin.js"></script>
+    <script>
+        const productosVendidos = JSON.parse(localStorage.getItem('productosVendidos')) || [];
+        const cantidadTotal = localStorage.getItem('cantidadTotalVendidos') || 0;
+        
+        document.getElementById("cantidad-productos-vendidos").textContent = `Cantidad de productos vendidos: ${cantidadTotal}`;
+        
+        productosVendidos.forEach(producto => {
+            const productoDiv = document.createElement('div');
+            productoDiv.className = 'producto';
+            productoDiv.textContent = `${producto.titulo} - Cantidad: ${producto.cantidad}`;
+            document.getElementById("nombres-productos-vendidos").appendChild(productoDiv);
+        });
+    </script>
 </body>
 </html>
+
+    

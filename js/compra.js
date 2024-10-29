@@ -22,5 +22,21 @@ document.getElementById("formulario-compra").onsubmit = function(event) {
     const mensajeConfirmacion = document.getElementById("mensaje-confirmacion");
     mensajeConfirmacion.textContent = "¡Gracias por tu compra!";
     mensajeConfirmacion.classList.remove("hidden");
+
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const productosVendidos = JSON.parse(localStorage.getItem('productosVendidos')) || [];
+    let cantidadTotal = parseInt(localStorage.getItem('cantidadTotalVendidos')) || 0;
+
+    carrito.forEach(item => {
+        cantidadTotal += item.cantidad; 
+        const index = productosVendidos.findIndex(producto => producto.titulo === item.titulo);
+        if (index !== -1) {
+            productosVendidos[index].cantidad += item.cantidad; 
+        } else {
+            productosVendidos.push({ titulo: item.titulo, cantidad: item.cantidad });
+        }
+    });
+    localStorage.setItem('productosVendidos', JSON.stringify(productosVendidos));
+    localStorage.setItem('cantidadTotalVendidos', cantidadTotal);
     localStorage.removeItem('carrito'); 
 };

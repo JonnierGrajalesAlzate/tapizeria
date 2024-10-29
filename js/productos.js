@@ -70,8 +70,9 @@ const carrito = [];
                 document.getElementById("contador-carrito").textContent = contadorCarrito;
                 actualizarCarrito();
             }
-        }
-        document.getElementById("finalizar-compra").onclick = () => {
+        } 
+        
+        document.getElementById("finalizar-compra").onclick = () => { 
             localStorage.setItem('carrito', JSON.stringify(carrito));
             window.location.href = "compra.html";
         };

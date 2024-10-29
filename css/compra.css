@@ -8,25 +8,23 @@ body {
 nav {
     background-color: rgb(149, 149, 149);
     padding: 20px;
-  }
+}
   
-  .menu-horizontal {
+.menu-horizontal {
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
   
-  .menu-horizontal a {
+.menu-horizontal a {
     color: #fff;
     text-decoration: none;
     padding: 8px;
-  }
+}
 
-  
-  
-  #selector{
+#selector{
     margin-left: 15px;
     text-decoration: none;
     color: black;
@@ -35,12 +33,12 @@ nav {
     border-radius: 3px;
     text-transform: uppercase;
     transition: .5s;
-  }
+}
   
-  #selector:hover{ 
-        background: #434343;
-        color:wheat;
-  }
+#selector:hover{ 
+    background: #434343;
+    color:wheat;
+}
 
 h1 {
     text-align: center;
